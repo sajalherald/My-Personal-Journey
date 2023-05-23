@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F9DBBB;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #F9DBBB;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .photo {
+            text-align: center;
+        }
+
+        .photo img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: rgb(238, 182, 76);
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button2 {
+            background-color: rgb(120, 120, 120);
+            color: black;
+            border: 2px solid #008CBA;
+        }
+
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        /* Dark mode toggle button */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Hobbies</h1>
+        </header>
+
+        <nav>
+            <a class="button button1" href="index.html">Home</a>
+            <a class="button button1" href="about.html">About Me</a>
+            <a class="button button1" href="hobbies.html">Hobbies</a>
+            <a class="button button1" href="work.html">Work Experience</a>
+            <a class="button button1" href="family.html">Family</a>
+            <a class="button button1" href="references.html">References</a>
+        </nav>
+
+        <main>
+            <h2>My Interests and Hobbies</h2>
+            <p>
+                I am interested in playing outdoor games like football. Football, also known as soccer in some countries, is a popular sport played by millions of people worldwide. Football is not just a sport for me; it's my ultimate passion and hobby. The thrill of stepping onto the field, feeling the grass beneath my feet, and the adrenaline rush that comes with every kick is unparalleled.
+            </p>
+            <div class="photo">
+                <img src="ronaldo.jpeg" alt="My Hobby">
+            </div>
+        </main>
+
+        <!-- Dark mode toggle button -->
+        <button id="darkModeToggle" class="button button2 dark-mode-toggle">Toggle Dark Mode</button>
+
+        <script>
+            const darkModeToggle = document.getElementById("darkModeToggle");
+            const body = document.body;
+
+            darkModeToggle.addEventListener("click", function() {
+                body.classList.toggle("dark-mode");
+            });
+        </script>
+    </div>
+</body>
+</html>

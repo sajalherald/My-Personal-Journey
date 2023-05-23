@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F9DBBB;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: rgb(238, 182, 76);
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button2 {
+            background-color: rgb(120, 120, 120);
+            color: black;
+            border: 2px solid #008CBA;
+        }
+
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        /* Feedback form styles */
+        .feedback {
+            margin-bottom: auto;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #F9DBBB;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>References</h1>
+        </header>
+
+        <nav>
+            <a class="button button1" href="index.html">Home</a>
+            <a class="button button1" href="about.html">About Me</a>
+            <a class="button button1" href="hobbies.html">Hobbies</a>
+            <a class="button button1" href="work.html">Work Experience</a>
+            <a class="button button1" href="family.html">Family</a>
+            <a class="button button1" href="references.html">References</a>
+        </nav>
+
+        <button id="darkModeToggle" class="button button2 dark-mode-toggle">Toggle Dark Mode</button>
+
+        <main>
+            <h2>References</h2>
+            <p>
+                
+            </p>
+            <a href="https://www.w3schools.com/html/">Reference for HTML codes</a><br>
+            <a href="https://www.svgrepo.com/svg/382106/male-avatar-boy-face-man-user-9">User Image</a><br>
+            <a href="https://twitter.com/TimelineCR7/status/1488657776805318657">Hobby Images</a><br>
+            <a href="https://dribbble.com/shots/6188233-404-page-What-a-Story">404 Image</a>
+        </main>
+
+        <form class="feedback" id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" rows="5" required></textarea><br>
+
+            <button type="submit">Save to Text File</button>
+        </form>
+
+        <script>
+            const darkModeToggle = document.getElementById("darkModeToggle");
+            const body = document.body;
+
+            darkModeToggle.addEventListener("click", function() {
+                body.classList.toggle("dark-mode");
+            });
+        </script>
+    </div>
+</body>
+</html>

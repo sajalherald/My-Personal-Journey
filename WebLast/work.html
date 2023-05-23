@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F9DBBB;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #F9DBBB;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: rgb(238, 182, 76);
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button2 {
+            background-color: rgb(120, 120, 120);
+            color: black;
+            border: 2px solid #008CBA;
+        }
+
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .photo {
+            text-align: center;
+            margin-left: 20px;
+        }
+
+        .photo img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* Dark mode toggle button */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            background-color: #333;
+            color: #F9DBBB;
+            border: none;
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Work Experience</h1>
+        </header>
+
+        <nav>
+            <a class="button button1" href="index.html">Home</a>
+            <a class="button button1" href="about.html">About Me</a>
+            <a class="button button1" href="hobbies.html">Hobbies</a>
+            <a class="button button1" href="work.html">Work Experience</a>
+            <a class="button button1" href="family.html">Family</a>
+            <a class="button button1" href="references.html">References</a>
+        </nav>
+
+        <main>
+            <h2>My Work Experience</h2>
+            <h2>I am currently not working.</h2>
+            <div class="photo">
+                <img src="404.gif" alt="My Photo">
+            </div>
+        </main>
+
+        <!-- Dark mode toggle button -->
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+        <script>
+            function toggleDarkMode() {
+                const body = document.body;
+                body.classList.toggle("dark-mode");
+            }
+        </script>
+    </div>
+</body>
+</html>
